@@ -30,6 +30,9 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
+    box-sizing: border-box;
+    min-height: 100vh;
+    font-family: "Nunito Sans", sans-serif;
 }
 ol, ul {
     list-style: none;

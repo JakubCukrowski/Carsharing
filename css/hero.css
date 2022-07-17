@@ -1,0 +1,80 @@
+.header {
+    background: transparent url("../images/Image.jpg") no-repeat center/cover;
+    background-size: 100% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.header:after {
+    content: "";
+    min-width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.28);
+    position: absolute;
+}
+
+h1 {
+    font-size: 90px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    padding-top: 164px;
+    padding-bottom: 10px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 100%;
+    padding: 20px 0;
+    background-color: #00000066;
+    z-index: 5;
+    position: sticky;
+    top: 0;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.txt {
+    padding-bottom: 10px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.buttons {
+    padding-bottom: 256px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.btn {
+    padding: 22px 55px;
+}
+
+.header-txt {
+    font-size: 35px;
+    text-transform: uppercase;
+    color: red;
+    font-weight: bolder;
+}
+
+.header-txt span {
+    color: white;
+}
+
+li {
+    padding: 0 22px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
