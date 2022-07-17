@@ -1,0 +1,56 @@
+body {
+    min-height: 100vh;
+    font-family: "Nunito Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+.page-header {
+    background: transparent url("../images/Image.jpg") no-repeat center/cover;
+    background-size: 100% 100%;
+    min-height: 807px;
+    min-width: 1372px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.page-header:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.27);
+    z-index: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1046px;
+    z-index: 5;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 90px;
+    font-weight: bolder;
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+.container p {
+    padding-bottom: 54px;
+}
+
+.txt {
+    color: #ffffff;
+    text-align: center;
+}
+
+
+
+

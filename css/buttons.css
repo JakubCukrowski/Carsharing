@@ -1,0 +1,27 @@
+
+.btn {
+    border-radius: 40px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.share {
+    background-color: #FF0000;
+    color: white;
+    margin-right: 25px;
+    padding: 22px 55px;
+}
+
+.features {
+    background-color: #fff;
+    color: #FF0000;
+    padding: 22px 55px;
+}
+
+.read-more {
+    padding: 10px 29px;
+    background-color: #FF0000;
+    color: white;
+    font-weight: normal;
+}
