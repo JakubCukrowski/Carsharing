@@ -16,7 +16,7 @@ li {
 
 .header-container {
     display: flex;
-    min-width: 100%;
+    min-width: 100vw;
     justify-content: space-around;
     align-items: center;
     position: fixed;
