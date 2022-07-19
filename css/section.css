@@ -129,6 +129,8 @@ h3 {
     justify-content: center;
     align-items: center;
     gap: 15px;
+    flex-wrap: wrap;
+    padding-bottom: 65px;
 }
 
 .form-container {
@@ -146,26 +148,27 @@ h3 {
 }
 
 .contact-img {
-    width: 45%;
+    width: 444px;
+    height: 317px;
     align-self: flex-start;
 }
 
 input[type="text"],
 input[type="email"] {
-    width: 100%;
+    width: 444px;
     height: 38px;
     padding: 0;
 }
 
 textarea {
-    width: 100%;
+    width: 444px;
     height: 140px;
 }
 
 
 .agreement {
     font-size: 10px;
-    width: 60%;
+    width: 412px;
 }
 
 button.send-btn {
@@ -174,4 +177,10 @@ button.send-btn {
     background-color: white;
     align-self: flex-end;
     box-shadow: 0 3px 6px #FF00004D;
+}
+
+.contact-h2 {
+    padding-top: 65px;
+    font-weight: bold;
+    padding-bottom: 35px;
 }
