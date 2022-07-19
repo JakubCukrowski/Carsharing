@@ -18,10 +18,23 @@
     left: 0;
 }
 
-p,
-li {
+.txt,
+li,
+.header-txt {
     color: white;
     text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    transition: background-color 0.5s;
+}
+
+li:hover {
+    background-color: #ffffff33;
 }
 
 .header-container {
@@ -32,6 +45,7 @@ li {
     position: fixed;
     top: 0;
     background-color: #00000066;
+    z-index: 5;
 }
 
 .header-txt {
@@ -39,6 +53,12 @@ li {
     font-size: 35px;
     text-transform: uppercase;
     padding: 22px;
+}
+
+.header-txt::before {
+    content: "\f1e0";
+    font-family: "Font Awesome 6 Free";
+    padding-right: 10px;
 }
 
 span {
@@ -62,11 +82,13 @@ h1 {
     text-transform: uppercase;
     color: white;
     padding-bottom: 10px;
+    text-shadow: 0 3px 6px #00000040;
 }
 
 .txt {
     padding-bottom: 54px;
     font-weight: bold;
+    line-height: 22px;
 }
 
 .button-container {
@@ -75,6 +97,8 @@ h1 {
     align-items: center;
     gap: 25px
 }
+
+
 
 .btn {
     border-radius: 40px;
@@ -95,12 +119,36 @@ h1 {
 
 }
 
-
-
-
 .share-btn:hover,
 .features-btn:hover{
     background-color: white;
     color: red;
     box-shadow: 0 0 7px rgba(255, 255, 255, 4);
+}
+
+.header::after {
+    content: "\f063";
+    font-family: "Font Awesome 6 Free";
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    width: 55px;
+    height: 55px;
+    background-color: red;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    bottom: -8%;
+    transform: translate(-50%, -50%);
+}
+
+.arrow {
+    width: 55px;
+    height: 55px;
+    background-color: red;
+
 }
