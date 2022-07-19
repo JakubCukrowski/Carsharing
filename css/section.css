@@ -6,13 +6,15 @@
 
 .blog-image {
     width: 100%;
+    padding-bottom: 25px;
 }
 
 .blog-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 16px;
+    padding-bottom: 100px;
 }
 
 .blog-posts {
@@ -24,12 +26,89 @@
 }
 
 .blog-txt {
-    width: 80%;
+    width: 75%;
+    font-size: 14px;
+    color: #6A6A6A;
+    padding-bottom: 26px;
 }
 
 h2 {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 35px;
+}
+
+.blog {
     padding-top: 91px;
+    padding-bottom: 35px;
+}
+
+h3 {
+    font-size: 19px;
+    color: #6A6A6A;
+    padding-bottom: 15px;
+}
+
+.read-more-btn {
+    padding: 11px 29px;
+    background-color: red;
+    color: white;
+    transition: background-color 0.5s, box-shadow 0.3s;
+}
+
+.read-more-btn:hover {
+    background-color: white;
+    color: red;
+    box-shadow: 0 0 7px rgba(255,0, 0, 0.5);
+}
+
+.service {
+    background-color: #28272C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.service-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 110px;
+}
+
+.service-img {
+    width: 70%;
+    padding-bottom: 15px;
+}
+
+.service-h2 {
+    padding-bottom: 75px;
+
+}
+
+.service-txt {
+    text-align: center;
+    padding-bottom: 26px;
+}
+
+.service-h2 {
+    color: white;
+    
 }
