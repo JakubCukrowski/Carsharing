@@ -3,7 +3,7 @@
     justify-content: space-around;
     align-items: center;
     background-color: #28272C;
-
+    padding-top: 40px;
 }
 
 .footer-container {
@@ -18,6 +18,13 @@
     align-self: flex-start;
     text-transform: uppercase;
     color: white;
+}
+
+.footer-h3::before {
+    content: "\f1e0";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    padding-right: 10px;
 }
 
 .footer-links {

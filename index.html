@@ -28,9 +28,9 @@
             <p class="header-txt"><span>car</span>sharing</p>
             <ul class="menu">
                 <a href="#"><li>home</li></a>
-                <a href="#"><li>blog</li></a>
-                <a href="#"><li>service</li></a>
-                <a href="#"><li>contact</li></a>
+                <a href="#blog-section"><li>blog</li></a>
+                <a href="#service-section"><li>service</li></a>
+                <a href="#contact-section"><li>contact</li></a>
             </ul>
         </nav>
         <div class="container">
@@ -43,8 +43,9 @@
                 <button class="btn features-btn">key features</button>
             </div>
         </div>
+        <img class="arrow" src="images/Icon%20Arrow%20Down.svg">
     </header>
-    <section class="section">
+    <section class="section" id="blog-section">
         <div class="container">
             <h2 class="blog">blog</h2>
             <div class="blog-container">
@@ -74,7 +75,7 @@
             </div>
         </div>
     </section>
-    <section class="service">
+    <section class="service" id="service-section">
         <div class="container">
             <div class="service-container">
                 <h2 class="service-h2">service</h2>
@@ -111,7 +112,7 @@
             </div>
         </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact-section">
         <div class="container">
             <h2 class="contact-h2">contact</h2>
             <div class="contact-container">
@@ -121,13 +122,13 @@
                     <input type="email" placeholder="Type your email">
                     <textarea name="textarea" placeholder="Type your message"></textarea>
                     <div class="checkbox">
-                        <input type="checkbox" name="checkbox">
-                        <p class="agreement">I hereby give consent for my personal
+                        <input type="checkbox" name="checkbox" id="checkbox">
+                        <label for="checkbox">I hereby give consent for my personal
                             data included in my application to be processed for the purposes of the recruitment
                             process under the European Parliament’s and Council of the European Union Regulation
                             on the Protection of Natural Persons as of 27 April 2016, with regard to the processing
                             of personal data and on the free movement of such data, and repealing Directive 95/46/EC
-                            (Data Protection Directive)</p>
+                            (Data Protection Directive)</label>
                     </div>
                     <button class="btn send-btn">send</button>
                 </div>

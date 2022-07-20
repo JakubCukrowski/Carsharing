@@ -36,11 +36,24 @@ h2 {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .blog {
     padding-top: 91px;
     padding-bottom: 35px;
+}
+
+h2::before,
+h2::after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: red;
+
 }
 
 h3 {
@@ -54,6 +67,7 @@ h3 {
     background-color: red;
     color: white;
     transition: background-color 0.5s, box-shadow 0.3s;
+    cursor: pointer;
 }
 
 .read-more-btn:hover {
@@ -158,25 +172,55 @@ input[type="email"] {
     width: 444px;
     height: 38px;
     padding: 0;
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border: 1px solid #FF0000;
+    box-shadow: 0 1px 6px #FF00004D;
 }
 
 textarea {
     width: 444px;
     height: 140px;
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid lightgray;
 }
 
+textarea:focus {
+    border: 1px solid #FF0000;
+    box-shadow: 0 1px 6px #FF00004D;
+}
 
-.agreement {
+label {
     font-size: 10px;
     width: 412px;
+    color: lightgray;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: lightgray;
 }
 
 button.send-btn {
     border: 1px solid #FF0000;
+    color: red;
     padding: 11px 29px;
     background-color: white;
     align-self: flex-end;
     box-shadow: 0 3px 6px #FF00004D;
+    cursor: pointer;
+    transition: opacity 0.4s, box-shadow 0.5s;
+}
+
+button.send-btn:hover {
+    box-shadow: 0 0 10px #FF00004D;
+    opacity: 0.7;
 }
 
 .contact-h2 {
@@ -184,3 +228,4 @@ button.send-btn {
     font-weight: bold;
     padding-bottom: 35px;
 }
+
