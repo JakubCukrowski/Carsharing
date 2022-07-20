@@ -100,6 +100,15 @@ h3 {
     flex-wrap: wrap;
 }
 
+.services h3 {
+    padding-top: 15px;
+}
+
+.img-hover-zoom {
+    overflow: hidden;
+    width: 180px;
+}
+
 .services {
     display: flex;
     flex-direction: column;
@@ -111,13 +120,28 @@ h3 {
 
 .service-img {
     width: 170px;
-    height: 170px;
-    padding-bottom: 15px;
 }
 
 .service-h2 {
     padding-bottom: 75px;
+}
 
+/* [1] The container */
+.img-hover-zoom {
+    width: 170px;
+    height: 170px;/* [1.1] Set it as per your need */
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+    border-radius: 50%;
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+    transition: transform .5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+    transform: scale(1.2);
 }
 
 .service-txt {
